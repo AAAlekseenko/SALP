@@ -1,12 +1,17 @@
 $color-gray: #706b73;
-$main_bac-col: #f5f5f5;
+$first-type_back-color: #f5f5f5;
 * {
-    background-color: $main_bac-col;
+    
     font-family: OpenSans, sans-serif;
    }
 
 header {
+    background-color: $first-type_back-color;
     padding-top:5.125rem;
+}
+.span_first-letters {
+    color: #fc6f4e;
+   
 }
 
 
@@ -15,14 +20,12 @@ header {
     height: 47px;
     display: block;
     text-align: center;
-    border: 3px solid #706b73;   
+    border: 3px solid $color-gray;   
     color: #494949;
     font-size: 28px;
     text-decoration: none;
     outline: none;
-            span {
-                color: #fa9179;
-            }
+            
 }
 .logo:hover {
     text-decoration: none;
@@ -44,4 +47,18 @@ header {
 }
 .bi-list_color-gray {
     color: $color-gray;
+}
+
+.smart {
+    background-color: $first-type_back-color;
+    padding-top: 7.9375rem;
+}
+.smart-logo {
+    font-size: 2.375rem;
+    color: $color-gray;
+    text-align: center;
+}
+
+.smart-text {
+    color: #565656;
 }

@@ -1,10 +1,14 @@
 * {
-  background-color: #f5f5f5;
   font-family: OpenSans, sans-serif;
 }
 
 header {
+  background-color: #f5f5f5;
   padding-top: 5.125rem;
+}
+
+.span_first-letters {
+  color: #fc6f4e;
 }
 
 .logo {
@@ -17,10 +21,6 @@ header {
   font-size: 28px;
   text-decoration: none;
   outline: none;
-}
-
-.logo span {
-  color: #fa9179;
 }
 
 .logo:hover {
@@ -42,5 +42,20 @@ header {
 
 .bi-list_color-gray {
   color: #706b73;
+}
+
+.smart {
+  background-color: #f5f5f5;
+  padding-top: 7.9375rem;
+}
+
+.smart-logo {
+  font-size: 2.375rem;
+  color: #706b73;
+  text-align: center;
+}
+
+.smart-text {
+  color: #565656;
 }
 /*# sourceMappingURL=main.css.map */
