@@ -1,5 +1,52 @@
+$color-gray: #706b73;
+$main_bac-col: #f5f5f5;
+* {
+    background-color: $main_bac-col;
+    font-family: OpenSans, sans-serif;
+   }
+
 header {
-    height: 200px;
-    width: 200px;
-    background-color: black;
+    padding-top:5.125rem;
+}
+
+.logo {
+    width: 141px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #706b73;
+        a {
+            
+            color: #494949;
+            font-size: 29px;
+           text-decoration: none;
+            span {
+                color: #fa9179;
+            }
+        }
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+.navbar-toggler {
+    border: none;
+    padding: .25rem 0;
+    
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+.nav-item {
+    padding-right: .5em;
+    .nav-link {
+        color: $color-gray;
+    }
+}
+
+.color-gray {
+    color: $color-gray;
 }
