@@ -10,56 +10,37 @@ header {
 .logo {
   width: 141px;
   height: 47px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+  text-align: center;
   border: 3px solid #706b73;
-}
-
-.logo a {
   color: #494949;
-  font-size: 29px;
+  font-size: 28px;
   text-decoration: none;
-}
-
-.logo a span {
-  color: #fa9179;
-}
-
-.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 0;
-}
-
-.navbar-toggler {
-  border: none;
-  padding: .25rem 0;
-}
-
-.navbar-toggler:focus {
   outline: none;
 }
 
-.nav-item {
-  padding-right: .5em;
+.logo span {
+  color: #fa9179;
 }
 
-.nav-item .nav-link {
+.logo:hover {
+  text-decoration: none;
+  color: #494949;
+}
+
+.navbar-toggler_border-none {
+  border: none;
+}
+
+.navbar-toggler_outline-none:focus {
+  outline: none;
+}
+
+.nav-link_color-gray {
   color: #706b73;
 }
 
-.color-gray {
+.bi-list_color-gray {
   color: #706b73;
 }
 /*# sourceMappingURL=main.css.map */
