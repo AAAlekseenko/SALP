@@ -57,5 +57,51 @@ header {
 
 .smart-text {
   color: #565656;
+  padding-bottom: 114px;
+}
+
+.form-block {
+  text-align: center;
+  padding: 39px 20px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 19px #dfdfdf;
+          box-shadow: 0 0 19px #dfdfdf;
+}
+
+.form-block_logo {
+  font-size: 16px;
+}
+
+.form-block_textarea {
+  resize: none;
+  width: 294px;
+}
+
+.input_border-bottom {
+  border: none;
+  border-bottom: 1px solid #c7c7c7;
+  border-radius: 0;
+}
+
+.btn_form-block {
+  height: 55px;
+  width: 238px;
+  border-radius: 31px;
+}
+
+.btn_form-block_orange {
+  background-color: #ff5c36;
+  color: white;
+}
+
+.input_width {
+  width: 294px;
+  max-width: 100%;
+}
+
+.working {
+  width: 2000px;
+  height: 500px;
+  background-color: white;
 }
 /*# sourceMappingURL=main.css.map */
