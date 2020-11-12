@@ -32,6 +32,16 @@ header {
     color: #494949;
 }
 
+.main-menu{
+    position: absolute;
+    background-color: $first-type_back-color;
+    z-index: 1;
+    padding: 0 50px;
+    right: -16px;
+    box-shadow: 0 0  15px rgba(223, 223, 223, 1);
+}
+
+
 
 .navbar-toggler_border-none {
     border: none;    
@@ -69,7 +79,7 @@ header {
     background-color: white;
     box-shadow: 0 0 19px rgba(223, 223, 223, 1) ;
 }
-.form-block_logo {
+.form-block__logo {
     font-size: 16px;
 }
 
@@ -97,12 +107,13 @@ border-radius: 31px;
 }
 
 
-.input_width {
+.form-block_width-294{
     width:  294px;
     max-width: 100%;
 }
 
 .working {
+    margin-top: -3px;
     width: 2000px;
     height: 500px;
     background-color: white;

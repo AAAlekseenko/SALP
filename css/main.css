@@ -28,6 +28,16 @@ header {
   color: #494949;
 }
 
+.main-menu {
+  position: absolute;
+  background-color: #f5f5f5;
+  z-index: 1;
+  padding: 0 50px;
+  right: -16px;
+  -webkit-box-shadow: 0 0 15px #dfdfdf;
+          box-shadow: 0 0 15px #dfdfdf;
+}
+
 .navbar-toggler_border-none {
   border: none;
 }
@@ -68,7 +78,7 @@ header {
           box-shadow: 0 0 19px #dfdfdf;
 }
 
-.form-block_logo {
+.form-block__logo {
   font-size: 16px;
 }
 
@@ -94,12 +104,13 @@ header {
   color: white;
 }
 
-.input_width {
+.form-block_width-294 {
   width: 294px;
   max-width: 100%;
 }
 
 .working {
+  margin-top: -3px;
   width: 2000px;
   height: 500px;
   background-color: white;
