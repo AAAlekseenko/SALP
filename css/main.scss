@@ -1,6 +1,8 @@
 $color-gray: #706b73;
 $first-type_back-color: #f5f5f5;
 $second-type_back-color: #ffffff;
+$block__topic_font-size: 2.375rem;
+$block__text_font-size: 1rem;
 * {
     
     font-family: OpenSans, sans-serif;
@@ -65,13 +67,13 @@ header {
     padding-top: 7.9375rem;
 }
 .smart-logo {
-    font-size: 2.375rem;
+    font-size: $block__topic_font-size;
     color: $color-gray;
     text-align: center;
 }
 
 .smart-text {
-    color: #565656;
+    color: #939393;
     padding-bottom: 114px;
 }
 .form-block {
@@ -81,12 +83,14 @@ header {
     box-shadow: 0 0 19px rgba(223, 223, 223, 1) ;
 }
 .form-block__logo {
-    font-size: 16px;
+    font-size: 1.25rem;
+    padding-bottom: 45px;
 }
 
 .form-block_textarea {
     resize: none;
     width: 294px;
+    height: 50px;
 }
 
 .input_border-bottom {
@@ -115,7 +119,17 @@ border-radius: 31px;
 
 .working {
     margin-top: -3px;
-    width: 2000px;
-    height: 500px;
+    padding-top: 147px;
     background-color: $second-type_back-color;
+}
+
+.blocks__topic_main-type {
+    font-size: $block__topic_font-size;
+    color: black;
+}
+
+.blocks__text_main-type {
+    font-size: $block__text_font-size;
+    color: #939393;
+
 }
