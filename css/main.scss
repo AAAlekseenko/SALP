@@ -437,11 +437,25 @@ border-radius: 31px;
 .carousel__wrapper {
     display: flex;
     justify-content: center;
+    
+   
 }
 .carousel__block {
     width: 536px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+}
+.carousel__block_wrapper {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid gray;
+    width: 100%;
+     min-height:272px;
+     text-align: center;
+ padding: 75px 50px 0 50px;
 }
 
 .carousel__block_logo {
@@ -449,18 +463,101 @@ border-radius: 31px;
     height: 100px;
     border: 1px solid gray;
     border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    transform: translateY(50px);
 }
 
 .carousel__block_logo-first {
+    background-image: url("../img/logo_abra.jpg");
 }
 .carousel__block_logo-second {
+    background-image: url("../img/logo_gyardos.jpg");
 }
 .carousel__block_logo-third {
+    background-image: url("../img/logo_abra.jpg");
 }
 .carousel__block_logo-fourth {
+    background-image: url("../img/logo_abra.jpg");
 }
 .carousel__block_logo-fifth {
+    background-image: url("../img/logo_gyardos.jpg") ;
 }
 .carousel__block_logo-sixth{
+    background-image: url("../img/logo_abra.jpg") ;
+}
+.carousel__block_stars {
+    padding-top: 40px;
+}
+.carousel__block_description {
+    font-style: italic;
+}
+.carousel__block_description span {
+    font-weight: bold;
+    font-style: normal;
 }
 
+.pre-footer {
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-color: #fbfbfb;
+    text-align: center;
+    @media (max-width:576px) {
+        display: none;
+        
+    }
+}
+
+.pre-footer_img {
+    margin-top: 30px;
+}
+
+.footer {
+    background-color: $first-type_back-color;
+    padding-top: 45px;
+    padding-bottom: 55px;
+}
+.footer__social {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    @media (max-width:767px) {
+        flex-direction: column;
+    
+        
+    }
+}
+.footer__social_wrapper {
+    display: flex;
+
+}
+
+.footer__social_block {
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer__social_block:hover {
+    background-color: #ff6e47;
+}
+.footer__social_block:not(:first-child) {
+    margin-left: 25px;
+}
+
+.footer__social_text {
+    margin: 0;
+    padding-left: 25px;
+    text-align: center;
+    @media (max-width:767px) {
+       padding-top: 20px;
+        padding-left: 0;
+        
+    }
+}
