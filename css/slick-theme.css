@@ -158,8 +158,8 @@
   font-size: 6px;
   line-height: 20px;
   text-align: center;
-  color: #  ff6e47;
-  opacity: 0.25;
+  color: #ff6e47;
+  opacity: .25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -168,4 +168,3 @@
   color: #ff6e47;
   opacity: 0.75;
 }
-/*# sourceMappingURL=slick-theme.css.map */

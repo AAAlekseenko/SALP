@@ -4,6 +4,7 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 2,
+        arrows: true,
         responsive: [
             {
               breakpoint: 1024,
@@ -11,7 +12,8 @@ $(document).ready(function(){
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: true
+                dots: true,
+                arrows: true
               }
             },
             {
