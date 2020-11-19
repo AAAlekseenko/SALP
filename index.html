@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Agency Landign Page</title>
+    <title>Smart Agency Landing Page</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
@@ -32,19 +32,19 @@
                         <div class="collapse navbar-collapse main-menu" id="navbar">
                             <ul class="navbar-nav text-center">
                                 <li class="nav-item ">
-                                    <a class="nav-link nav-link_color-gray" href="#link-1">Smart</a>
+                                    <a class="nav-link nav-link_color-gray" href="#smart">Smart</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link nav-link_color-gray" href="#link-2">Working</a>
+                                    <a class="nav-link nav-link_color-gray" href="#working">Working</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link nav-link_color-gray" href="#link-3">Featured</a>
+                                    <a class="nav-link nav-link_color-gray" href="#featured">Featured</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link nav-link_color-gray" href="#link-4">Services</a>
+                                    <a class="nav-link nav-link_color-gray" href="#services">Services</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link nav-link_color-gray" href="#link-5">Team</a>
+                                    <a class="nav-link nav-link_color-gray" href="#team">Team</a>
                                 </li>
                             </ul>
                         </div>
@@ -53,7 +53,7 @@
             </div>
     </header>
     <main class="main">
-            <section class="smart">
+            <section class="smart" id="#smart">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-auto text-center">
@@ -72,7 +72,7 @@
                     <div class="row justify-content-center justify-content-md-start">
                         <div class="col-auto">
                             <div class="form-block form-block_width-294 ">
-                                <form class="">
+                                <form  onsubmit="" class="test">
                                     <h3 class="form-block__logo">
                                         <span class="span_first-letters">Send</span> A Message
                                     </h3>
@@ -85,20 +85,45 @@
                                     <div class="input-group  mb-3">
                                         <textarea class="form-control form-block__textarea input_border-bottom " placeholder="Your Message" aria-label="With textarea"></textarea>
                                     </div>
-                                    <button type="button" class="btn btn-sm button_main-type button_main-form">
+                                    <button type="submit" class="btn btn-primary btn-sm button_main-type button_main-form" " >
                                         Send Message   
                                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                                         </svg>
                                     </button>
                                 </form>
+                                
+                              <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    ...
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+
+
+
                             </div>
                         </div>
                     </div>
                 </div>
 
             </section>
-            <section class="working">
+            <section class="working" id="working">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-auto">
@@ -185,7 +210,7 @@
                     </div>
                 </div>
             </section>
-            <section class="featured">
+            <section class="featured" id="featured">
                <div class="container">
                    <div class="row justify-content-center">
                         <div class="col-auto">
@@ -253,7 +278,7 @@
                      </div>
                </div>
             </section>
-            <section class="services">
+            <section class="services" id="services">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-auto">
@@ -275,16 +300,16 @@
                     <div class="row justify-content-between ">
                         <div class="col-12 col-md-2">
                             <div class="services__cube-block">
-                                <div class="services__cube services__cube_first">
+                                <div class="services__cube services__cube_ball">
                                     
                                 </div>
-                                <div class="services__cube services__cube_second">
+                                <div class="services__cube services__cube_gear">
                                   
                                 </div>
-                                <div class="services__cube services__cube_third">
+                                <div class="services__cube services__cube_magnifier">
                                    
                                 </div>
-                                <div class="services__cube services__cube_fourth">
+                                <div class="services__cube services__cube_big-ball">
                                     
                                 </div>
                             </div>
@@ -316,7 +341,7 @@
                     </div>
                 </div>
             </section>
-            <section class="team">
+            <section class="team" id="team">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-auto">
@@ -338,22 +363,22 @@
                     
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-6 col-xl-4">
-                            <div class="team__card team__card_first-person" >
-                            <div class="team__card_skill" >
-                                <p class="card__skill-spec">
+                            <div class="team-card team-card_first-person" >
+                            <div class="team-card__skill" >
+                                <p class="team-card__skill-spec">
                                     UI/UX  Design
                                 </p>
-                                <img class="card__skill-bar" src="img/first-skill-bar-1.png" alt="Тут была картинка но её украли цыгане">
-                                <p class="card__skill-spec">
+                                <img class="team-card__skill-bar" src="img/first-skill-bar-1.png" alt="Тут была картинка но её украли цыгане">
+                                <p class="team-card__skill-spec">
                                     English
                                 </p >
-                                <img class="card__skill-bar" src="img/first-skill-bar-2.png" alt="Тут была картинка но её украли цыгане">
-                                <p class="card__skill-spec">
+                                <img class="team-card__skill-bar" src="img/first-skill-bar-2.png" alt="Тут была картинка но её украли цыгане">
+                                <p class="team-card__skill-spec">
                                     Communication
                                 </p>
-                                <img class="card__skill-bar"src="img/first-skill-bar-3.png" alt="Тут была картинка но её украли цыгане">
+                                <img class="team-card__skill-bar"src="img/first-skill-bar-3.png" alt="Тут была картинка но её украли цыгане">
                             </div>
-                            <div class="team__card-name" >
+                            <div class="team-card__card-name" >
                                 <h3 class="card-name__person">
                                     Abra
                                 </h3>
@@ -381,22 +406,22 @@
                         </div>
                     </div>
                         <div class="col-12 col-md-6 col-xl-4">
-                            <div class="team__card team__card_second-person" >
-                            <div class="team__card_skill" >
-                                <p class="card__skill-spec">
+                            <div class="team-card team-card_second-person" >
+                            <div class="team-card__skill" >
+                                <p class="team-card__skill-spec">
                                     UI/UX  Design
                                 </p>
-                                <img class="card__skill-bar" src="img/second-skill-bar.png" alt="Тут была картинка но её украли цыгане">
-                                <p class="card__skill-spec">
+                                <img class="team-card__skill-bar" src="img/second-skill-bar.png" alt="Тут была картинка но её украли цыгане">
+                                <p class="team-card__skill-spec">
                                     English
                                 </p >
-                                <img class="card__skill-bar" src="img/second-skill-bar-2.png" alt="Тут была картинка но её украли цыгане">
-                                <p class="card__skill-spec">
+                                <img class="team-card__skill-bar" src="img/second-skill-bar-2.png" alt="Тут была картинка но её украли цыгане">
+                                <p class="team-card__skill-spec">
                                     Communication
                                 </p >
-                                <img class="card__skill-bar"src="img/second-skill-bar-3.png" alt="Тут была картинка но её украли цыгане">
+                                <img class="team-card__skill-bar"src="img/second-skill-bar-3.png" alt="Тут была картинка но её украли цыгане">
                             </div>
-                            <div class="team__card-name" >
+                            <div class="team-card__card-name" >
                                 <h3 class="card-name__person">
                                     Gyarados
                                 </h3>
@@ -425,22 +450,22 @@
                         </div>
                     </div>
                         <div class="col-12 col-md-6 col-xl-4">
-                            <div class="team__card team__card_third-preson">
-                            <div class="team__card_skill" >
-                                <p class="card__skill-spec">
+                            <div class="team-card team-card_third-preson">
+                            <div class="team-card__skill" >
+                                <p class="team-card__skill-spec">
                                     UI/UX  Design
                                 </p>
-                                <img class="card__skill-bar" src="img/first-skill-bar-1.png" alt="Тут была картинка но её украли цыгане">
-                                <p class="card__skill-spec">
+                                <img class="team-card__skill-bar" src="img/first-skill-bar-1.png" alt="Тут была картинка но её украли цыгане">
+                                <p class="team-card__skill-spec">
                                     English
                                 </p >
-                                <img class="card__skill-bar" src="img/second-skill-bar.png" alt="Тут была картинка но её украли цыгане">
-                                <p class="card__skill-spec">
+                                <img class="team-card__skill-bar" src="img/second-skill-bar.png" alt="Тут была картинка но её украли цыгане">
+                                <p class="team-card__skill-spec">
                                     Communication
                                 </p>
-                                <img class="card__skill-bar"src="img/first-skill-bar-3.png" alt="Тут была картинка но её украли цыгане">
+                                <img class="team-card__skill-bar"src="img/first-skill-bar-3.png" alt="Тут была картинка но её украли цыгане">
                             </div>
-                            <div class="team__card-name" >
+                            <div class="team-card__card-name" >
                                 <h3 class="card-name__person">
                                     Charizard 
                                 </h3>
@@ -493,88 +518,100 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="carousel__wrapper">
-                                <div class="carousel__block">
+                                <div class="carousel-block">
                                     
-                                   <div class="carousel__logo carousel__logo_first"></div>
-                                    <div class="carousel__block-wrapper">
-                                        <div class="carousel__block-text">
+                                   <div class="carousel__logo-block ">
+                                       <img src="./img/logo_abra.jpg" alt="" class="logo-block__img">
+                                   </div>
+                                    <div class="carousel-block__wrapper">
+                                        <div class="carousel-block__text">
                                             <p class="carousel__text">
                                                 Voluptate in ad qui elit fugiat sint do consequat consequat. Quis magna aliqua laborum pariatur Lorem aliqua enim est laboris ipsum ullamco. 
                                             </p>
                                         </div>
                                             <img src="./img/Star.png" alt="Тут была картинка но её украли цыгане" class="carousel__stars">
-                                        <div class="carousel__description">
+                                        <div class="carousel-block__description">
                                             <p><span>Alacazam,</span> HK Director</p>
                                         </div>
                                     </div>
 
                                 </div>
-                                <div class="carousel__block">
-                                    <div class="carousel__logo carousel__logo_second"></div>
-                                    <div class="carousel__block-wrapper">
-                                        <div class="carousel__block-text">
+                                <div class="carousel-block">
+                                    <div class="carousel__logo-block">
+                                        <img src="./img/logo_gyardos.jpg" alt="" class="logo-block__img">
+                                    </div>
+                                    <div class="carousel-block__wrapper">
+                                        <div class="carousel-block__text">
                                             <p class="carousel__text">
                                                 Voluptate in ad qui elit fugiat sint do consequat consequat. Quis magna aliqua laborum pariatur Lorem aliqua enim est laboris ipsum ullamco. 
                                             </p>
                                         </div>
                                             <img src="./img/Star.png" alt="Тут была картинка но её украли цыгане" class="carousel__stars">
-                                        <div class="carousel__description">
+                                        <div class="carousel-block__description">
                                             <p><span>Alacazam,</span> HK Director</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel__block">
-                                    <div class="carousel__logo carousel__logo_third"></div>
-                                    <div class="carousel__block-wrapper">
-                                        <div class="carousel__block-text">
+                                <div class="carousel-block">
+                                    <div class="carousel__logo-block">
+                                        <img src="./img/logo_abra.jpg" alt="" class="logo-block__img">
+                                    </div>
+                                    <div class="carousel-block__wrapper">
+                                        <div class="carousel-block__text">
                                             <p class="carousel__text">
                                                 Voluptate in ad qui elit fugiat sint do consequat consequat. Quis magna aliqua laborum pariatur Lorem aliqua enim est laboris ipsum ullamco. 
                                             </p>
                                         </div>
                                             <img src="./img/Star.png" alt="Тут была картинка но её украли цыгане" class="carousel__stars">
-                                        <div class="carousel__description">
+                                        <div class="carousel-block__description">
                                             <p><span>Alacazam,</span> HK Director</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel__block">
-                                    <div class="carousel__logo carousel__logo_fourth"></div>
-                                    <div class="carousel__block-wrapper">
-                                        <div class="carousel__block-text">
+                                <div class="carousel-block">
+                                    <div class="carousel__logo-block">
+                                        <img src="./img/logo_gyardos.jpg" alt="" class="logo-block__img">
+                                    </div>
+                                    <div class="carousel-block__wrapper">
+                                        <div class="carousel-block__text">
                                             <p class="carousel__text">
                                                 Voluptate in ad qui elit fugiat sint do consequat consequat. Quis magna aliqua laborum pariatur Lorem aliqua enim est laboris ipsum ullamco. 
                                             </p>
                                         </div>
                                             <img src="./img/Star.png" alt="Тут была картинка но её украли цыгане" class="carousel__stars">
-                                        <div class="carousel__description">
+                                        <div class="carousel-block__description">
                                             <p><span>Alacazam,</span> HK Director</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel__block">
-                                    <div class="carousel__logo carousel__logo_fifth"></div>
-                                    <div class="carousel__block-wrapper">
-                                        <div class="carousel__block-text">
+                                <div class="carousel-block">
+                                    <div class="carousel__logo-block">
+                                        <img src="./img/logo_abra.jpg" alt="" class="logo-block__img">
+                                    </div>
+                                    <div class="carousel-block__wrapper">
+                                        <div class="carousel-block__text">
                                             <p class="carousel__text">
                                                 Voluptate in ad qui elit fugiat sint do consequat consequat. Quis magna aliqua laborum pariatur Lorem aliqua enim est laboris ipsum ullamco. 
                                             </p>
                                         </div>
                                             <img src="./img/Star.png" alt="Тут была картинка но её украли цыгане" class="carousel__stars">
-                                        <div class="carousel__description">
+                                        <div class="carousel-block__description">
                                             <p><span>Alacazam,</span> HK Director</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel__block">
-                                    <div class="carousel__logo carousel__logo_sixth"></div>
-                                    <div class="carousel__block-wrapper">
-                                        <div class="carousel__block-text">
+                                <div class="carousel-block">
+                                    <div class="carousel__logo-block">
+                                        <img src="./img/logo_gyardos.jpg" alt="" class="logo-block__img">
+                                    </div>
+                                    <div class="carousel-block__wrapper">
+                                        <div class="carousel-block__text">
                                             <p class="carousel__text">
                                                 Voluptate in ad qui elit fugiat sint do consequat consequat. Quis magna aliqua laborum pariatur Lorem aliqua enim est laboris ipsum ullamco. 
                                             </p>
                                         </div>
                                             <img src="./img/Star.png" alt="Тут была картинка но её украли цыгане" class="carousel__stars">
-                                        <div class="carousel__description">
+                                        <div class="carousel-block__description">
                                             <p><span>Alacazam,</span> HK Director</p>
                                         </div>
                                     </div>
@@ -587,12 +624,12 @@
             <section class="pre-footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-1.png" alt="Тут была картинка но её украли цыгане" class="pre-footer_img"></div>
-                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-2.png" alt="Тут была картинка но её украли цыгане" class="pre-footer_img"></div>
-                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-3.png" alt="Тут была картинка но её украли цыгане" class="pre-footer_img"></div>
-                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-1.png" alt="Тут была картинка но её украли цыгане" class="pre-footer_img"></div>
-                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-2.png" alt="Тут была картинка но её украли цыгане" class="pre-footer_img"></div>
-                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-3.png" alt="Тут была картинка но её украли цыгане" class="pre-footer_img"></div>
+                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-1.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img"></div>
+                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-2.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img"></div>
+                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-3.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img"></div>
+                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-1.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img"></div>
+                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-2.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img"></div>
+                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-3.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img"></div>
                     </div>
                 </div>
             </section>
