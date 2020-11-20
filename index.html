@@ -52,8 +52,8 @@
                 </div>
             </div>
     </header>
-    <main class="main">
-            <section class="smart" id="#smart">
+    <main class="main" >
+            <section class="smart" id="smart">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-auto text-center">
@@ -72,20 +72,20 @@
                     <div class="row justify-content-center justify-content-md-start">
                         <div class="col-auto">
                             <div class="form-block form-block_width-294 ">
-                                <form  onsubmit="" class="test">
+                                <form  onsubmit="" class="jq-form">
                                     <h3 class="form-block__logo">
                                         <span class="span_first-letters">Send</span> A Message
                                     </h3>
                                     <div class="input-group  mb-3">
-                                        <input type="text" class="form-control input_border-bottom " placeholder="Your Name" aria-label="Имя пользователя" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control input_border-bottom " required name="name" placeholder="Your Name" aria-label="Имя пользователя" aria-describedby="basic-addon1">
                                     </div>
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control input_border-bottom " placeholder="Your Email" aria-label="Имя пользователя" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control input_border-bottom " required name="email" placeholder="Your Email" aria-label="Имя пользователя" aria-describedby="basic-addon1">
                                     </div>
                                     <div class="input-group  mb-3">
-                                        <textarea class="form-control form-block__textarea input_border-bottom " placeholder="Your Message" aria-label="With textarea"></textarea>
+                                        <textarea class="form-control form-block__textarea input_border-bottom " name="message" placeholder="Your Message" aria-label="With textarea"></textarea>
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-sm button_main-type button_main-form" " >
+                                    <button type="submit" class="btn btn-primary btn-sm button_main-type button_main-form" >
                                         Send Message   
                                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -94,7 +94,7 @@
                                 </form>
                                 
                               <!-- Modal -->
-                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal fade" id="jq-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -103,7 +103,7 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body jq-text">
                                     ...
                                     </div>
                                     <div class="modal-footer">
@@ -519,7 +519,6 @@
                         <div class="col-12">
                             <div class="carousel__wrapper">
                                 <div class="carousel-block">
-                                    
                                    <div class="carousel__logo-block ">
                                        <img src="./img/logo_abra.jpg" alt="" class="logo-block__img">
                                    </div>
@@ -553,83 +552,94 @@
                                     </div>
                                 </div>
                                 <div class="carousel-block">
-                                    <div class="carousel__logo-block">
-                                        <img src="./img/logo_abra.jpg" alt="" class="logo-block__img">
+                                <div class="carousel__logo-block">
+                                    <img src="./img/logo_abra.jpg" alt="" class="logo-block__img">
+                                </div>
+                                <div class="carousel-block__wrapper">
+                                    <div class="carousel-block__text">
+                                        <p class="carousel__text">
+                                            Voluptate in ad qui elit fugiat sint do consequat consequat. Quis magna aliqua laborum pariatur Lorem aliqua enim est laboris ipsum ullamco. 
+                                        </p>
                                     </div>
-                                    <div class="carousel-block__wrapper">
-                                        <div class="carousel-block__text">
-                                            <p class="carousel__text">
-                                                Voluptate in ad qui elit fugiat sint do consequat consequat. Quis magna aliqua laborum pariatur Lorem aliqua enim est laboris ipsum ullamco. 
-                                            </p>
-                                        </div>
-                                            <img src="./img/Star.png" alt="Тут была картинка но её украли цыгане" class="carousel__stars">
-                                        <div class="carousel-block__description">
-                                            <p><span>Alacazam,</span> HK Director</p>
-                                        </div>
+                                        <img src="./img/Star.png" alt="Тут была картинка но её украли цыгане" class="carousel__stars">
+                                    <div class="carousel-block__description">
+                                        <p><span>Alacazam,</span> HK Director</p>
                                     </div>
                                 </div>
-                                <div class="carousel-block">
-                                    <div class="carousel__logo-block">
-                                        <img src="./img/logo_gyardos.jpg" alt="" class="logo-block__img">
+                            </div>
+                            <div class="carousel-block">
+                                <div class="carousel__logo-block">
+                                    <img src="./img/logo_gyardos.jpg" alt="" class="logo-block__img">
+                                </div>
+                                <div class="carousel-block__wrapper">
+                                    <div class="carousel-block__text">
+                                        <p class="carousel__text">
+                                            Voluptate in ad qui elit fugiat sint do consequat consequat. Quis magna aliqua laborum pariatur Lorem aliqua enim est laboris ipsum ullamco. 
+                                        </p>
                                     </div>
-                                    <div class="carousel-block__wrapper">
-                                        <div class="carousel-block__text">
-                                            <p class="carousel__text">
-                                                Voluptate in ad qui elit fugiat sint do consequat consequat. Quis magna aliqua laborum pariatur Lorem aliqua enim est laboris ipsum ullamco. 
-                                            </p>
-                                        </div>
-                                            <img src="./img/Star.png" alt="Тут была картинка но её украли цыгане" class="carousel__stars">
-                                        <div class="carousel-block__description">
-                                            <p><span>Alacazam,</span> HK Director</p>
-                                        </div>
+                                        <img src="./img/Star.png" alt="Тут была картинка но её украли цыгане" class="carousel__stars">
+                                    <div class="carousel-block__description">
+                                        <p><span>Alacazam,</span> HK Director</p>
                                     </div>
                                 </div>
-                                <div class="carousel-block">
-                                    <div class="carousel__logo-block">
-                                        <img src="./img/logo_abra.jpg" alt="" class="logo-block__img">
+                            </div>
+                            <div class="carousel-block">
+                                <div class="carousel__logo-block">
+                                    <img src="./img/logo_abra.jpg" alt="" class="logo-block__img">
+                                </div>
+                                <div class="carousel-block__wrapper">
+                                    <div class="carousel-block__text">
+                                        <p class="carousel__text">
+                                            Voluptate in ad qui elit fugiat sint do consequat consequat. Quis magna aliqua laborum pariatur Lorem aliqua enim est laboris ipsum ullamco. 
+                                        </p>
                                     </div>
-                                    <div class="carousel-block__wrapper">
-                                        <div class="carousel-block__text">
-                                            <p class="carousel__text">
-                                                Voluptate in ad qui elit fugiat sint do consequat consequat. Quis magna aliqua laborum pariatur Lorem aliqua enim est laboris ipsum ullamco. 
-                                            </p>
-                                        </div>
-                                            <img src="./img/Star.png" alt="Тут была картинка но её украли цыгане" class="carousel__stars">
-                                        <div class="carousel-block__description">
-                                            <p><span>Alacazam,</span> HK Director</p>
-                                        </div>
+                                        <img src="./img/Star.png" alt="Тут была картинка но её украли цыгане" class="carousel__stars">
+                                    <div class="carousel-block__description">
+                                        <p><span>Alacazam,</span> HK Director</p>
                                     </div>
                                 </div>
-                                <div class="carousel-block">
-                                    <div class="carousel__logo-block">
-                                        <img src="./img/logo_gyardos.jpg" alt="" class="logo-block__img">
-                                    </div>
-                                    <div class="carousel-block__wrapper">
-                                        <div class="carousel-block__text">
-                                            <p class="carousel__text">
-                                                Voluptate in ad qui elit fugiat sint do consequat consequat. Quis magna aliqua laborum pariatur Lorem aliqua enim est laboris ipsum ullamco. 
-                                            </p>
-                                        </div>
-                                            <img src="./img/Star.png" alt="Тут была картинка но её украли цыгане" class="carousel__stars">
-                                        <div class="carousel-block__description">
-                                            <p><span>Alacazam,</span> HK Director</p>
-                                        </div>
-                                    </div>
-                                
+                            </div>
+                            <div class="carousel-block">
+                                <div class="carousel__logo-block">
+                                    <img src="./img/logo_gyardos.jpg" alt="" class="logo-block__img">
                                 </div>
+                                <div class="carousel-block__wrapper">
+                                    <div class="carousel-block__text">
+                                        <p class="carousel__text">
+                                            Voluptate in ad qui elit fugiat sint do consequat consequat. Quis magna aliqua laborum pariatur Lorem aliqua enim est laboris ipsum ullamco. 
+                                        </p>
+                                    </div>
+                                        <img src="./img/Star.png" alt="Тут была картинка но её украли цыгане" class="carousel__stars">
+                                    <div class="carousel-block__description">
+                                        <p><span>Alacazam,</span> HK Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
                 </div>
             </section>
             <section class="pre-footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-1.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img"></div>
-                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-2.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img"></div>
-                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-3.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img"></div>
-                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-1.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img"></div>
-                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-2.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img"></div>
-                        <div class="col-2 col-sm-4"><img src="./img/pre-footer_img-3.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img"></div>
+                        <div class="col-2 col-sm-4">
+                            <img src="./img/pre-footer_img-1.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img">
+                        </div>
+                        <div class="col-2 col-sm-4">
+                            <img src="./img/pre-footer_img-2.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img">
+                        </div>
+                        <div class="col-2 col-sm-4">
+                            <img src="./img/pre-footer_img-3.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img">
+                        </div>
+                        <div class="col-2 col-sm-4">
+                            <img src="./img/pre-footer_img-1.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img">
+                        </div>
+                        <div class="col-2 col-sm-4">
+                            <img src="./img/pre-footer_img-2.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img">
+                        </div>
+                        <div class="col-2 col-sm-4">
+                            <img src="./img/pre-footer_img-3.png" alt="Тут была картинка но её украли цыгане" class="pre-footer__img">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -637,14 +647,15 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="row justify-content-center"><div class="col-auto">
-                
+            <div class="row justify-content-center">
+                <div class="col-auto">
                 <button class="btn button_main-type button_w-238">
                     Contact Us
                 </button>
             </div>
         </div>
-            <div class="row justify-content-center"><div class="col-auto">
+            <div class="row justify-content-center">
+                <div class="col-auto">
                 <div class="f-social">
                     <div class="f-social__wrapper">
                     <div class="f-social__block">
@@ -679,10 +690,10 @@
                     </div>
                 </div>
                     <p class="f-social__text">© 2015 - 2016 Deviserweb Ltd.</p>
-
                 </div>
             
-            </div></div>
+                </div>
+            </div>
         </div>
     </footer>
 

@@ -37,47 +37,33 @@ $(function(){
         st = $(blockId).offset().top;
     $('html, body').animate({scrollTop: st}, 1000);
   });
+  
+  $('.jq-form').submit(function(event) {
+    event.preventDefault();
+    $("#jq-modal").modal('show');
+    var data = $(this).serializeArray().reduce(function(str, item){
+      var row = 'Your ' + item.name + ':' + safeTagsReplace(item.value) + "<br />";
+
+      return str + row;
+    },"");
+  
+    $(".jq-text").html(data);
+  });
+  var tagsToReplace = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;'
+  };
+
+  function replaceTag(tag) {
+    return tagsToReplace[tag] || tag;
+  }
+
+  function safeTagsReplace(str) {
+    if(!str) return '';
+    return str.replace(/[&<>]/g, replaceTag);
+  }
+
+
 });
 
-
-
-  // function TFun(){
-  //   localStorage.setItem('jopa', document.getElementById('jopa').value);
-    
-  //   document.getElementById("test").innerHTML = localStorage.getItem("jopa");
-  
-  // }
-
-// $(document).ready(function(){
-//   //при нажатию на любую кнопку, имеющую класс .btn
-//   $(".button_main-type").click(function() {
-//     //открыть модальное окно с id="myModal"
-//     $("#myModalBox").modal('show');
-//   });
-// });
-
-// function TFun(){
-//   $(document).ready(function() {
-//     $("#myModalBox").modal('show');
-//   });
-//   var obj;
-//   var data = $('#form').serializeArray().reduce(function(obj, item) {
-//     obj[item.name] = item.value;
-//     console.error(obj)
-//     return(obj);
-// }, {});
-//   console.error(obj);
-// }
-
-
-
-$( document ).ready(function(){
-  $( ".button_main-form" ).click(function(){ 
-    console.error('хуй')
-    $("#exampleModalLong").modal('show');// задаем функцию при нажатиии на элемент <button>
-    // $( "test" ).submit(); // вызываем событие submit на элементе <form>
-  }); })
-// function TFun(){
-//   $(document).ready(function() {
-//       $("#exampleModalLong").modal('show');
-// }) 
